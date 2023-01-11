@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "skill test for softwareBastards",
   "main": "index.js",
-  "directories": {
-    "example": "examples"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
