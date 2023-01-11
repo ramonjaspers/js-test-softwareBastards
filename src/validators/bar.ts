@@ -1,7 +1,7 @@
 import Bar from "../interfaces/bar";
 
 // explicitly used any to show general validation logic
-export default function isValidBar(bar: any): bar is Bar {
+export default function validateBar(bar: any): bar is Bar {
   // export default function validateBar(bar: Bar) {
   return (
     typeof bar === "object" &&
