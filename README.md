@@ -1,3 +1,9 @@
+# Running the code
+## install dependencies
+`npm i`
+## start code
+`npm start`
+
 ![](https://www.frontendbastards.nl/wp-content/uploads/2019/03/Logo-frontend-bastards.png)
 
 # Code Test

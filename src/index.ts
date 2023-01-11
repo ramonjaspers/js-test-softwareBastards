@@ -6,7 +6,9 @@ const bars = require ("../examples/bars");
 const cars = require ("../examples/cars");
 const person = require ("../examples/persons");
 
-
+// for this example i am using console logs as result.
+// in a normal scenario for api validation i'd use joi validators
+// and validate with validateAsync which would throw the invalid prop
 console.log("-------valid messages--------");
 let barMessage = `Bar is ${validateBar(bars.barObj) ? "valid" : "invalid"} `;
 let carMessage = `Car is ${validateCar(cars.carObj) ? "valid" : "invalid"} `;
