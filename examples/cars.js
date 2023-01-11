@@ -25,3 +25,6 @@ const carObjF = {
         'KW Coilovers',
     ],
 };
+
+
+module.exports = { carObj, carObjF };

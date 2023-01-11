@@ -1,15 +1,26 @@
+import validateBar from "./validators/bar";
 import validateCar from "./validators/car";
+import validatePerson from "./validators/person";
 
-
-const validCar = {
-  brand: "Mazda",
-  type: "MX5 NB 1.8",
-  milage: 199999.99,
-  extras: ["2001 Special Edition"],
-}
+const bars = require ("../examples/bars");
+const cars = require ("../examples/cars");
+const person = require ("../examples/persons");
 
 
 console.log("-------valid messages--------");
-let carMessage = `Car is ${validateCar(validCar) ? "valid" : "invalid"} `;
+let barMessage = `Bar is ${validateBar(bars.barObj) ? "valid" : "invalid"} `;
+let carMessage = `Car is ${validateCar(cars.carObj) ? "valid" : "invalid"} `;
+let personMessage = `Person is ${validatePerson(person.personObj) ? "valid" : "invalid"} `;
+console.log(barMessage);
 console.log(carMessage);
+console.log(personMessage);
 
+// due to typeScript usage invalid object passing is not possible,
+// example given for bar validation when not using a strict object
+console.log("-------invalid messages--------");
+barMessage = `Bar is ${validateBar(bars.barObjF) ? "valid" : "invalid"} `;
+// carMessage = `Car is ${validateCar(invalidCar) ? "valid" : "invalid"} `;
+// personMessage = `Person is ${validatePerson(invalidPerson) ? "valid" : "invalid"}`;
+console.log(barMessage);
+// console.log(carMessage);
+// console.log(personMessage);

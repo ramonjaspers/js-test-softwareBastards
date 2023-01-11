@@ -4,7 +4,7 @@ const personSchema = {
     siblings: 'array',
     metaData: 'object',
     active: 'boolean',
- };
+};
 
 // Validates true
 const personObj = {
@@ -21,3 +21,5 @@ const personObjF = {
     age: 25,
     active: true,
 };
+
+module.exports = { personObj, personObjF };
